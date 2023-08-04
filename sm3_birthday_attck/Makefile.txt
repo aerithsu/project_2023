@@ -1,0 +1,8 @@
+CC = gcc
+CFLAGS = -Wall -O2
+
+main.exe: main.cpp
+	$(CC) $(CFLAGS) main.cpp -o main.exe
+
+clean:
+	rm -f main.exe

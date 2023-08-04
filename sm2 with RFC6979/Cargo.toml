@@ -1,0 +1,24 @@
+[package]
+name = "libsm"
+version = "0.5.1"
+
+keywords = ["cipher", "cryptography"]
+license = "Apache-2.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+byteorder = "1.0"
+num-bigint = "0.4"
+num-traits = "0.2"
+num-integer = "0.1"
+yasna = { version = "0.5", features = ["num-bigint"] }
+lazy_static = "1.0"
+getrandom = { version = "0.2", features = ["js"] }
+
+[dev-dependencies]
+hex = "0.4"
+base64 = "0.21"
+
+[features]
+internal_benches = []
